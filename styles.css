@@ -158,3 +158,50 @@ p {
     transform: translateY(-5px); /* 3D hover effect */
 }
 
+.about {
+    background-color: #1a1a1a; /* Dark background for the About Us section */
+    padding: 60px 20px; /* Padding for spacing */
+    text-align: center;
+    perspective: 1000px; /* 3D perspective */
+}
+
+.about-content {
+    transform: translateZ(30px); /* 3D effect */
+    z-index: 1; /* Ensure content appears above background */
+}
+
+.about h2 {
+    font-size: 3rem; /* Size of the title */
+    color: #ff4081; /* Accent color */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.about p {
+    font-size: 1.2rem; /* Size of the paragraph text */
+    color: #ffffff; /* White text */
+    opacity: 0.9; /* Slightly transparent */
+    margin: 10px 0 20px; /* Spacing for paragraphs */
+}
+
+.team {
+    display: flex; /* Use flexbox for team member layout */
+    justify-content: center; /* Center the team members */
+    margin-top: 30px; /* Space above team section */
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+}
+
+.team-member {
+    background: rgba(255, 64, 129, 0.2); /* Semi-transparent background */
+    padding: 20px; /* Padding around team member details */
+    margin: 10px; /* Space between team members */
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation for hover */
+    width: 200px; /* Fixed width for team members */
+    transform: translateZ(10px); /* 3D effect on team members */
+}
+
+.team-member:hover {
+    transform: translateY(-5px) scale(1.05); /* 3D hover effect */
+    box-shadow: 0 10px 30px rgba(255, 64, 129, 0.3); /* Shadow on hover */
+}
+
