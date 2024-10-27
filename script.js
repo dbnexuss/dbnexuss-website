@@ -1,14 +1,14 @@
-// Smooth scroll for navigation links
-const navLinks = document.querySelectorAll('.nav-list a');
+// JavaScript to add some additional interactivity (Optional)
+document.addEventListener("DOMContentLoaded", () => {
+  const navLinks = document.querySelectorAll('.nav-links li a');
 
-navLinks.forEach(link => {
-    link.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href');
-        const targetElement = document.querySelector(targetId);
-        
-        if (targetElement) {
-            targetElement.scrollIntoView({ behavior: 'smooth' });
-        }
+  navLinks.forEach(link => {
+    link.addEventListener('mouseenter', () => {
+      link.style.transform = 'perspective(300px) rotateY(15deg)';
     });
+
+    link.addEventListener('mouseleave', () => {
+      link.style.transform = 'perspective(300px) rotateY(0deg)';
+    });
+  });
 });
