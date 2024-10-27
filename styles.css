@@ -7,42 +7,34 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #1a1a1a; /* Dark header background */
+    background-color: #1a1a1a;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    z-index: 2; /* Ensures header is above background */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 header h1 {
     font-size: 2rem;
-    color: #ff4081; /* Header title color */
-    margin: 0; /* Remove default margin */
+    color: #ff4081;
+    margin: 0;
 }
 
 nav {
-    display: flex;            /* Flexbox layout for horizontal alignment */
-    flex-direction: row;     /* Ensure items are in a row */
-    align-items: center;     /* Center items vertically */
-    gap: 20px;               /* Space between nav items */
-    margin: 0;               /* Remove default margin */
-    padding: 0;              /* Remove default padding */
+    display: flex;
+    gap: 20px;
 }
 
 nav a {
-    color: #ffffff; /* White text color for links */
-    text-decoration: none; /* Remove underline */
+    color: #ffffff;
+    text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s; /* Smooth color transition */
-    padding: 10px 15px; /* Add padding around links */
-    display: block; /* Ensure links are block-level for padding */
+    transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #ff4081; /* Color change on hover */
+    color: #ff4081;
 }
 
 /* Hero Section Styles */
@@ -63,7 +55,7 @@ nav a:hover {
     transform: translateZ(50px); /* 3D effect */
 }
 
-h1 {
+.hero h1 {
     font-size: 4rem;
     margin: 0;
     letter-spacing: 2px;
@@ -71,25 +63,25 @@ h1 {
     animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
 }
 
-p {
+.hero p {
     font-size: 1.5rem;
     margin: 10px 0 20px;
-    opacity: 0.8; /* Slightly transparent */
+    opacity: 0.8;
 }
 
 .cta-button {
     padding: 15px 30px;
-    background-color: #ff4081; /* CTA button color */
-    color: #ffffff; /* White text */
+    background-color: #ff4081;
+    color: #ffffff;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    transition: transform 0.3s, box-shadow 0.3s; /* Animation */
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .cta-button:hover {
-    transform: translateY(-5px) scale(1.05); /* 3D hover effect */
-    box-shadow: 0 10px 20px rgba(255, 64, 129, 0.5); /* Shadow effect */
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(255, 64, 129, 0.5);
 }
 
 .hero-background {
@@ -98,59 +90,11 @@ p {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('your-background-video-or-image.jpg') no-repeat center center / cover; /* Background image or video */
-    z-index: 1; /* Place it behind the content */
-    filter: brightness(0.5); /* Darken background */
+    background: url('your-background-video-or-image.jpg') no-repeat center center / cover;
+    z-index: 1;
+    filter: brightness(0.5);
     transform: translateZ(-20px); /* 3D effect for background */
     animation: scaleUp 10s infinite alternate; /* Optional scaling animation */
-}
-
-/* About Us Section Styles */
-.about {
-    background-color: #1a1a1a; /* Dark background for the About Us section */
-    padding: 60px 20px; /* Padding for spacing */
-    text-align: center;
-    perspective: 1000px; /* 3D perspective */
-}
-
-.about-content {
-    transform: translateZ(30px); /* 3D effect */
-    z-index: 1; /* Ensure content appears above background */
-}
-
-.about h2 {
-    font-size: 3rem; /* Size of the title */
-    color: #ff4081; /* Accent color */
-    margin-bottom: 20px; /* Space below the title */
-}
-
-.about p {
-    font-size: 1.2rem; /* Size of the paragraph text */
-    color: #ffffff; /* White text */
-    opacity: 0.9; /* Slightly transparent */
-    margin: 10px 0 20px; /* Spacing for paragraphs */
-}
-
-.team {
-    display: flex; /* Use flexbox for team member layout */
-    justify-content: center; /* Center the team members */
-    margin-top: 30px; /* Space above team section */
-    flex-wrap: wrap; /* Wrap items on smaller screens */
-}
-
-.team-member {
-    background: rgba(255, 64, 129, 0.2); /* Semi-transparent background */
-    padding: 20px; /* Padding around team member details */
-    margin: 10px; /* Space between team members */
-    border-radius: 10px; /* Rounded corners */
-    transition: transform 0.3s, box-shadow 0.3s; /* Animation for hover */
-    width: 200px; /* Fixed width for team members */
-    transform: translateZ(10px); /* 3D effect on team members */
-}
-
-.team-member:hover {
-    transform: translateY(-5px) scale(1.05); /* 3D hover effect */
-    box-shadow: 0 10px 30px rgba(255, 64, 129, 0.3); /* Shadow on hover */
 }
 
 /* Keyframes for animations */
